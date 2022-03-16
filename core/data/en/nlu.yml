@@ -1,0 +1,191 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - alo hi
+    - good afternoon
+    - good evening
+    - good morning
+    - good night
+    - Hello
+    - alo hello
+- intent: ask_when_available
+  examples: |
+    - when
+    - when will he be free
+    - when she will be free
+    - when they are free
+    - when can i go back to it
+    - when i can go back to her
+    - when can i get back to them
+    - when can i call back
+    - when to call back
+    - how to contact
+    - when will she
+    - when will he come
+    - when will they be
+    - when can he call back
+    - when can she call back
+    - when can they call back
+    - when can he contact me
+    - When can she contact me
+    - when can they contact me
+    - ok when will it be available
+    - ok when will it be
+    - ok when will it be
+    - Well, when will they be
+    - after how much
+    - after what time
+    - after how much time
+    - when is his meeting
+    - when is her meeting
+    - when do they meet
+    - when will he be busy
+    - when won't she be busy
+    - when will they be busy
+    - how can I talk to him
+- intent: goodbye
+  examples: |
+    - see you soon
+    - See you
+    - bye
+    - have a good day
+    - bye-bye
+    - in touch
+    - thanks a lot no need
+    - no need thank you
+    - no goodbye
+    - goodbye
+    - have a nice evening
+- intent: affirm
+  examples: |
+    - Yes
+    - Yes, sure
+    - of course
+    - sounds good
+    - right
+    - exactly
+    - please
+    - faster
+    - tell him
+    - give her
+    - tell them
+    - pass it on to him
+    - tell her
+    - pass them on
+    - Yes please
+    - send a message
+    - tell him
+    - tell her
+    - tell them
+- intent: deny
+  examples: |
+    - No
+    - not needed
+    - never
+    - I do not think so
+    - no no
+    - no chance
+    - no thanks
+    - I'm begging
+    - I don't want to talk
+    - not now
+    - no need
+    - no need thank you
+    - No no need
+    - not necessary
+- intent: ask_where_client
+  examples: |
+    - where is he
+    - where is she
+    - Where are they
+    - where are you
+    - How can I talk to him
+    - How can I talk to her
+    - How can I talk to them
+    - why busy
+    - why are they known
+    - What are you doing
+    - what are busy
+    - can I talk to him
+    - can I talk to her
+    - can I talk to them
+    - where is he
+    - and where he
+    - where is she
+    - where are they
+
+- intent: thankyou
+  examples: |
+    - thanks dear
+    - thanks
+    - thank you very much
+- intent: leave_message
+  examples: |
+    - I want to leave a message
+    - I want to send a message
+    - I want to give him something
+    - I want to give her something
+    - give him a message
+    - yes please tell him
+    - yes please tell her
+    - deliver a message
+    - I need help
+    - you can let him know
+    - you can let her know
+    - you can let them know
+    - you can give it to him
+    - you can give it to her
+    - you can send them
+    - you can give him
+    - you can give it to her
+    - you can give them
+    - certainly
+    - it's a matter of life or death
+    - I need to cook food but I don’t have the strength, you can replace me
+    - I need a more accurate time in the back
+    - I want to jump off the roof
+    - I need urgent help
+    - bot ask the recipient to bring milk on the way home.
+    - Come back to me
+    - that he will talk to me as soon as he appears thanks
+    - let him come back to me when available
+    please come back to me soon
+    - I need the recipient to call me back as soon as he finishes the meeting
+    - talk to me after
+    - tell the recipient to call me back urgently
+    - call me when you see this message
+    - come back to me when you're available
+    - send him a fine
+    - call me
+    - tell him that he called me
+    - don't tell me anything
+    - what to do
+    - what to do
+- intent: who_are_you
+  examples: |
+    - who are you
+    - who release
+    - who are you
+    - who am I talking to
+    - what is your name
+    - you are human
+    - hello who is this
+    - who is it
+    - Where I am
+    - what is your name
+- intent: how_are_you_bot
+  examples: |
+    - how are you
+    - how is it
+    - what's happening
+    - What's up
+    - how do you feel
+- intent: out_of_scope
+  examples: |
+    - ha ha ha
+    - prapwap
+    - despite
+    - a cup of coffee
+    - synchrophasotron

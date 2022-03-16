@@ -1,0 +1,66 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- who_are_you:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- deny:
+    use_entities: true
+- affirm:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- leave_message:
+    use_entities: true
+- ask_when_available:
+    use_entities: true
+- ask_where_client:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- how_are_you_bot:
+    use_entities: true
+entities: []
+slots:
+  conversation_started:
+    type: bool
+    influence_conversation: True
+    initial_value: False
+responses:
+  utter_greet:
+  - text: Hello!
+  utter_who_is_bot:
+  - text: My name is Amila. I am an electronic assistant.
+  utter_ask_if_leave_message:
+  - text: Would you like to leave a message?
+  utter_default:
+  - text: Can you repeat?
+  utter_ask_rephrase:
+  - text: Can you repeat?
+  utter_deny:
+  - text: No
+  utter_goodbye:
+  - text: Goodbye. I will pass this information on.
+  utter_tell_where_client:
+  - text: Client is currently busy
+  utter_when_client_available:
+  - text: Client is currently busy
+  utter_how_can_bot_help:
+  - text: How may I help you?
+  utter_answer_bot_how_are_you:
+  - text: I'm fine.
+actions:
+- action_default_fallback_custom
+- action_out_of_scope
+- action_set_conversation_started
+forms: {}
+e2e_actions: []
